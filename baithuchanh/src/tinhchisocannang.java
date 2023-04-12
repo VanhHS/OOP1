@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class tinhchisocannang {
     public static void main (String[]args) {
         Scanner scanner = new Scanner(System.in);
-        double weight , height,  bmi;
+        double weight , height,  bmi;//Khai bao bien can nang va chieu cao , chi so khoi co the
 
         System.out.println("Your weight(in kilogram");
-        weight = scanner.nextDouble();
+        weight = scanner.nextDouble();//Khoi tao va nhap gia tri cho bien
 
         System.out.println("Your height(in meter");
-        height = scanner.nextDouble();
+        height = scanner.nextDouble();//Khoi tao va nhap gia tri cho bien
 
-        bmi = weight / Math.pow(height, 2);
+        bmi = weight / Math.pow(height, 2);//Su dung toan tu tinh chi so can nang theo cong thuc
 
         System.out.printf("%-20s%s", "bmi", "Interpretation\n");
 
@@ -23,5 +23,6 @@ public class tinhchisocannang {
             System.out.printf("%-20.2f%s", bmi, "Overweight");
         else
             System.out.printf("%-20.2f%s", bmi, "Obese");
+        // Hien thi chi so va phan loai ket qua
     }
 }
