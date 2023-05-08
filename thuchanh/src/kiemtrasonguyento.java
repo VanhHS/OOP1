@@ -9,6 +9,7 @@ public class kiemtrasonguyento {
         if (number<2) {//Kiem tra xem number nhap vao vao có phai so nguyen to
             System.out.println(number + "number is not a prime");//In ra khi so vua nhap vao ko phai so nguyen to
         }else {
+
             int i = 2;//Khoi tao bien i
             boolean check = true;//Khoi tao bien check
             while (i <= Math.sqrt(number)) {//Kiem tra can bac 2 cua number
